@@ -12,8 +12,8 @@ Using the previous assignment ...
 2. in terminal, run python3 hw3queue.py user1 user2 user3        (and so on), this way will not delete other pictures or videos previously created
 
 
-# Main Exercise
-Using the previous assignment, do the following: 
+# Assignment
+Make your HW4 a REST service running on AWS
 - Use Flask as your WEB service platform
 - Step 2:  Integrate your module to become a RESTFUL system
 - Deploy your system to free AWS services
