@@ -18,13 +18,13 @@ def runProcesses(userList):
     pool.close()
     pool.join()
 
-    print(f'Time taken = {time.time() - startTime:.10f}')
+#    print(f'Time taken = {time.time() - startTime:.10f}')
 
 if __name__ == '__main__':
-	users = []
-	sys.argv.pop(0)
-	for user in sys.argv:
-		users.append(user)
-	print(str(len(users)) + " tasks about to start running!") 
-	if not (users == []):
-		runProcesses(users)
+    users = []
+    sys.argv.pop(0)
+    for user in sys.argv:
+        users.append(user)
+#    print(str(len(users)) + " tasks about to start running!") 
+    if not (users == []):
+        runProcesses(users)
