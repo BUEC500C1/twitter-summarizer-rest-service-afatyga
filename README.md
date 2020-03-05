@@ -1,15 +1,17 @@
 # EC500 C1 Alex Fatyga
-Using the previous assignment ...
-
-# Installation
-- Git clone this repo!
-- Set up Twitter Developer account
-- in terminal, run pip3 install -r requirements.txt
+Using the previous assignment, I added a flask module to go on top of the multiprocessing of creating a video of tweets and images. I then was able to use AWS and deploy this web app onto 
 
 # To Use
-- 2 ways: 
-1. using restartProgram (batch or bash) and modify to run with the twitter users you want, example is provided in code but another is => python3 hw3queue.py user1 user2 user3 user4
-2. in terminal, run python3 hw3queue.py user1 user2 user3        (and so on), this way will not delete other pictures or videos previously created
+After asking me for the link, go to the link on port 8080 and you can enter up to 4 usernames at a time!
+
+# Example Use
+The following image is the view of the web page with no inputs! <br>
+<img src="webpage.JPG" width="55%" /> <br> <br>
+The following image shows the aftermath of putting in 4 usernames, a zip file is downloaded so the user then has all the videos that were generated <br> 
+<img src="withZip.JPG" width="55%" /> <br> <br>
+The following shows that within this folder, only 2 videos exist because 2 usernames did not have any tweets to generate videos.
+<img src="zipFileShown.JPG" width="55%" /> <br>
+
 
 
 # Assignment
