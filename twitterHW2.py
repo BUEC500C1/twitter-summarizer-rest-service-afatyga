@@ -20,11 +20,12 @@ max_tweets = 20
 countImages = 0
 
 def createVideo(num): #creates a video of all the images
-	videoName = "tweetVid" + str(num) + ".avi"
+	videoName = "/Vids/tweetVid" + str(num) + ".avi"
 	startVal = num * 100
-	args = "ffmpeg.exe -framerate 0.33 -loglevel quiet -start_number " + str(startVal)+ " -i tweets%d.png " + videoName
+	args = "ffmpeg -framerate 0.33 -loglevel quiet -start_number " + str(startVal)+ " -i tweets%d.png " + videoName
 	os.system(args)
-#	subprocess.run(["ffmpeg.exe","-framerate", "0.33", "-loglevel", "quiet", "-start_number", str(startVal), "-i", "tweets%d.png",videoName])
+#	args = "ffmpeg -i " + videoName + " tweetVid" + str(num) + ".mp4 -loglevel quiet"
+#	os.system(args)
 
 def imageThreads(listOfLinks, count):
 	threads = []
@@ -102,7 +103,7 @@ def getMsgs(username):
 		return [] #means the username was not valid!
 
 def startUp(userNum): #my attempt at multi threading
-	print("Process with username: " + str(userNum[0]) + " and process id: " + str(os.getpid()) + " is running")
+	#print("Process with username: " + str(userNum[0]) + " and process id: " + str(os.getpid()) + " is running")
 
 	listOfStuff = getMsgs(userNum[0]) #returns a list of urls/texts to make into images!
 
@@ -119,5 +120,5 @@ def startUp(userNum): #my attempt at multi threading
 		thread.join() #ends the threads
 	
 	createVideo(userNum[1])
-	print("Video created for user " + userNum[0])
+	#print("Video created for user " + userNum[0])
 	return 1
