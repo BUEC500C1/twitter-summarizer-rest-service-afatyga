@@ -6,7 +6,7 @@ After asking me for the link, go to the link on port 8080 and you can enter up t
 
 # Example Use
 The following image is the view of the web page with no inputs! <br>
-<img src="webpage.JPG" width="55%" /> <br> <br>
+<img src="webPage.JPG" width="55%" /> <br> <br>
 The following image shows the aftermath of putting in 4 usernames, a zip file is downloaded so the user then has all the videos that were generated <br> 
 <img src="withZip.JPG" width="55%" /> <br> <br>
 The following shows that within this folder, only 2 videos exist because 2 usernames did not have any tweets to generate videos.
