@@ -27,6 +27,8 @@ def post():
         for f in files:
             zipFolder.write('Vids/' + str(f))
     zipFolder.close()
+
+    os.system(args3)    
     return send_file('vids.zip', mimetype ='zip', attachment_filename = 'vids.zip', as_attachment=True)
 
 #    return render_template('videos.html')
