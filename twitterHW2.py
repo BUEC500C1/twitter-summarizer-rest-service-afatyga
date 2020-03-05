@@ -20,13 +20,12 @@ max_tweets = 20
 countImages = 0
 
 def createVideo(num): #creates a video of all the images
-	videoName = "tweetVid" + str(num) + ".avi"
+	videoName = "/Vids/tweetVid" + str(num) + ".avi"
 	startVal = num * 100
-	args = "ffmpeg.exe -framerate 0.33 -loglevel quiet -start_number " + str(startVal)+ " -i tweets%d.png " + videoName
+	args = "ffmpeg -framerate 0.33 -loglevel quiet -start_number " + str(startVal)+ " -i tweets%d.png " + videoName
 	os.system(args)
-	args = "ffmpeg -i " + videoName + " tweetVid" + str(num) + ".mp4 -loglevel quiet"
-	os.system(args)
-#	subprocess.run(["ffmpeg.exe","-framerate", "0.33", "-loglevel", "quiet", "-start_number", str(startVal), "-i", "tweets%d.png",videoName])
+#	args = "ffmpeg -i " + videoName + " tweetVid" + str(num) + ".mp4 -loglevel quiet"
+#	os.system(args)
 
 def imageThreads(listOfLinks, count):
 	threads = []

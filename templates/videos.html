@@ -9,6 +9,9 @@
 			font-stretch: extra-expanded;
 			text-align: center;
 		}
+		form {
+  			text-align: center;
+		}
 
 		
 	</style>
@@ -19,34 +22,29 @@
     </style>
     <h1>The videos have been created!</h1>
   </head>
+<form>
+<video width="320" height="240" controls>
+  <source src={{ url_for(filename="tweetVid0.mp4") }} type="video/mp4">
+  Video 1 does not exist or was not created.
+</video>
+&nbsp;&nbsp;&nbsp;&nbsp;
 
-<object height="350" width="425">
-<embed height="350" src="../tweetVid0.avi" width="425" wmode="transparent">
-</object>
+<video width="320" height="240" controls>
+  <source src={{ url_for(filename="tweetVid1.mp4") }} type="video/mp4">
+  Video 2 does not exist or was not created.
+</video>
 
-<object>
-<embed type="application/x-mplayer2" 
-name="mediaplayer1" autoplay="false" autostart="false" 
-width="300" height="200" loop="false" controls="false" 
-allowFullscreen="True" 
-src="../tweetVid0.avi">
-</object>  
+<br> <br>
+<video width="320" height="240" controls>
+  <source src={{ url_for(filename="tweetVid2.mp4") }} type="video/mp4">
+  Video 3 does not exist or was not created.
+</video>
 
-<object height="350" width="425">
-<embed height="350" src="../tweetVid0.mp4" width="425" wmode="transparent">
-</object>
-
-<object>
-<embed type="application/x-mplayer2" 
-name="mediaplayer1" autoplay="false" autostart="false" 
-width="300" height="200" loop="false" controls="false" 
-allowFullscreen="True" 
-src="../tweetVid0.mp4">
-</object>  
-
-
-<video src= ../tweetVid0.mp4></video>
-<video src= tweetVid0.mp4></video>
-
+&nbsp;&nbsp;&nbsp;&nbsp;
+<video width="320" height="240" controls>
+  <source src={{ url_for(filename="tweetVid3.mp4") }} type="video/mp4">
+  Video 4 does not exist or was not created.
+</video>
+</form>
 </body>
 </html>

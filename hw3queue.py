@@ -1,9 +1,9 @@
-from multiprocessing import cpu_count, Pool #for multi processing
+from multiprocessing import Pool #for multi processing
 from twitterHW2 import startUp # to multi process getting the tweets and creating the video
 import time # to get the time
 import sys
 
-PROCESSES = cpu_count() - 1
+PROCESSES = 4
 
 def runProcesses(userList):
 
